@@ -1,6 +1,7 @@
 package dao;//Now, implementation classes can implement the interface and contain the data access logic to return the required data.
 
 import models.Clients;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ public class ClientsDaoImpl implements ClientsDao {
     String url;
     String username;
     String password;
+
+    static Logger logger = Logger.getLogger(ClientsDaoImpl.class);
 
     public ClientsDaoImpl() {
         this.url = "jdbc:postgresql://" + System.getenv("AWS_RDS_ENDPOINT") + "/capitaldatabase";
@@ -39,8 +42,8 @@ public class ClientsDaoImpl implements ClientsDao {
                 clients.add(new Clients(rs.getInt(1), rs.getString(2),
                         rs.getString(3), rs.getString(4)));
             }
-        } catch (SQLException a) {
-            a.printStackTrace();
+        } catch (SQLException c) {
+            logger.error(c);
         }
         return clients;
     }
@@ -61,14 +64,14 @@ public class ClientsDaoImpl implements ClientsDao {
             }
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException c) {
+            logger.error(c);
         }
         return client;
     }
 
     @Override
-    public void createClient(Clients client) {
+    public Boolean createClient(Clients client) {
 
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
             String sql = "INSERT INTO clients VALUES (DEFAULT, ?, ?, ?);";
@@ -80,10 +83,11 @@ public class ClientsDaoImpl implements ClientsDao {
 
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException c) {
+            logger.error(c);
         }
 
+        return null;
     }
 
     @Override
@@ -97,8 +101,8 @@ public class ClientsDaoImpl implements ClientsDao {
 
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException c) {
+            logger.error(c);
         }
 
     }
@@ -113,8 +117,8 @@ public class ClientsDaoImpl implements ClientsDao {
             ps.setInt(1, clientId);
             ps.executeUpdate();
             //conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException c) {
+            logger.error(c);
         }
     }
 }

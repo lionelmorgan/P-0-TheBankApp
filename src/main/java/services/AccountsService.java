@@ -40,4 +40,6 @@ public class AccountsService {
 
     public void withdrawFromAccount(Accounts account){ accountsDao.withdrawFromAccount(account);}
 
+    public void transferToAccount(Accounts account){ accountsDao.transferToAccount(account);}
+
 }

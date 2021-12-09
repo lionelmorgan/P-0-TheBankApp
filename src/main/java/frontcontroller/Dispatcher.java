@@ -20,6 +20,7 @@ public class Dispatcher {
         app.put("/accounts/{id}", AccountsController::updateAccount);
         app.delete("/accounts/{id}", AccountsController::deleteAccount);
         app.patch("/accounts/{id}", AccountsController::withdrawFomAccount);
+        app.patch("/accounts/accountTransfer/{id}", AccountsController::transferToAccount);
 
     }
 }

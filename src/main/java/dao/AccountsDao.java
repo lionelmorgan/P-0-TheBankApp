@@ -12,4 +12,5 @@ public interface AccountsDao {
     void updateAccount(Accounts account);
     void deleteAccount(Accounts account);
     void withdrawFromAccount(Accounts account);
+    void transferToAccount(Accounts account);
 }

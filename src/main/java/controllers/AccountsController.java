@@ -45,7 +45,11 @@ public class AccountsController {
         context.contentType("application/json");
         Integer clientId = Integer.parseInt(context.pathParam("id"));
         List<Accounts> client = accountsService.getAccountExact(clientId);
-        context.result(new ObjectMapper().writeValueAsString(client));
+        if(client == null){
+            context.status(404).result("Account does not exist");
+        }else {
+            context.result(new ObjectMapper().writeValueAsString(client));
+        }
     }
     public static void getAccountRange(Context context) throws JsonProcessingException {
             context.contentType("application/json");
@@ -75,6 +79,14 @@ public class AccountsController {
         Integer account_no = Integer.parseInt(context.pathParam("id"));
         accountsService.withdrawFromAccount(account);
         context.status(201).result("Account with id of " + account_no + " has been withdrawn successfully");
+
+    }
+
+    public static void transferToAccount(Context context) {
+        Accounts account = context.bodyAsClass(Accounts.class);
+        Integer account_no = Integer.parseInt(context.pathParam("id"));
+        accountsService.transferToAccount(account);
+        context.status(201).result("Account with id of " + account_no + " has had funds transfered to successfully");
 
     }
     }

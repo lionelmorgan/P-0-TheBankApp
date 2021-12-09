@@ -10,6 +10,8 @@ public class Accounts {
     private String client_lastname;
     private Double account_balance;
     private Double account_withdraw;
+    private Double account_transfer;
+    private Double account_amount;
 
     public Accounts(){
 
@@ -24,6 +26,8 @@ public class Accounts {
         this.client_lastname = client_lastname;
         this.account_balance = account_balance;
         this.account_withdraw = account_withdraw;
+        this.account_transfer = account_transfer;
+        this.account_amount = account_amount;
     }
 
     public Integer getAccount_no() {return account_no;}
@@ -55,6 +59,14 @@ public class Accounts {
 
     public void setAccount_withdraw(Double account_withdraw) {this.account_withdraw = account_withdraw;}
 
+    public Double getAccount_transfer() {return account_transfer;}
+
+    public void setAccount_transfer(Double account_transfer) {this.account_transfer = account_transfer;}
+
+    public Double getAccount_amount() {return account_amount;}
+
+    public void setAccount_amount(Double account_amount) {this.account_amount = account_amount;}
+
     @Override
     public String toString() {
         return "Accounts{" +
@@ -65,6 +77,8 @@ public class Accounts {
                 ", client_lastname='" + client_lastname + '\'' +
                 ", account_balance=" + account_balance +
                 ", account_withdraw=" + account_withdraw +
+                ", account_transfer=" + account_transfer +
+                ", account_amount=" + account_amount +
                 '}';
     }
 }

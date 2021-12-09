@@ -16,14 +16,19 @@ public class ClientsService {
     public static Clients getOneClient(Integer clientId) { return clientsDao.getOneClient(clientId);}
 
     public boolean createClient(Clients client) {
-        if (client.getClient_username().length() > 50)
+        if ((client.getClient_username().length()) > 50) {
             return false;
-        else if (client.getClient_firstname().length() > 50)
+        }
+        else if (client.getClient_firstname().length() > 50) {
             return false;
-        else if (client.getClient_lastname().length() > 50)
+        }
+        else if (client.getClient_lastname().length() > 50) {
             return false;
-        clientsDao.createClient(client);
-        return true;
+        }
+        else {
+            clientsDao.createClient(client);
+            return true;
+        }
     }
 
     public void updateClient(Integer clientId){

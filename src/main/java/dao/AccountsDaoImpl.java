@@ -1,6 +1,7 @@
 package dao;
 
 import models.Accounts;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ public class AccountsDaoImpl implements AccountsDao{
         String url;
         String username;
         String password;
+
+        static Logger logger = Logger.getLogger(AccountsDaoImpl.class);
 
         public AccountsDaoImpl() {
             this.url = "jdbc:postgresql://" + System.getenv("AWS_RDS_ENDPOINT") + "/capitaldatabase";
@@ -40,7 +43,7 @@ public class AccountsDaoImpl implements AccountsDao{
                             rs.getString(4), rs.getString(5), rs.getDouble(6)));
                 }
             } catch (SQLException a) {
-                a.printStackTrace();
+                logger.error(a);
             }
             return accounts;
 
@@ -62,8 +65,8 @@ public class AccountsDaoImpl implements AccountsDao{
                 }
                 //conn.close();
 
-            } catch (SQLException e) {
-                e.printStackTrace();
+            } catch (SQLException a) {
+                logger.error(a);
             }
             return client;
         }
@@ -83,8 +86,8 @@ public class AccountsDaoImpl implements AccountsDao{
             }
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException a) {
+            logger.error(a);
         }
         return client;
     }
@@ -104,8 +107,8 @@ public class AccountsDaoImpl implements AccountsDao{
             }
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException a) {
+            logger.error(a);
         }
         return client;
     }
@@ -126,8 +129,8 @@ public class AccountsDaoImpl implements AccountsDao{
 
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException a) {
+            logger.error(a);
         }
 
     }
@@ -145,8 +148,8 @@ public class AccountsDaoImpl implements AccountsDao{
 
             //conn.close();
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException a) {
+            logger.error(a);
         }
 
     }
@@ -164,8 +167,8 @@ public class AccountsDaoImpl implements AccountsDao{
 
                 ps.executeUpdate();
 
-            }catch (SQLException e){
-                e.printStackTrace();
+            }catch (SQLException a) {
+                logger.error(a);
             }
         }
 
@@ -194,8 +197,34 @@ public class AccountsDaoImpl implements AccountsDao{
             ps1.executeUpdate();
 
 
-        }catch (SQLException e){
-            e.printStackTrace();
+        }catch (SQLException a) {
+            logger.error(a);
+        }
+
+
+    }
+
+    @Override
+    public void transferToAccount(Accounts account) {
+
+        try( Connection conn = DriverManager.getConnection(url, username, password)){
+
+            String sql = "UPDATE accounts SET account_balance = (account_balance - ?) WHERE account_no = ? AND client_id = ?;";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setDouble(1, account.getAccount_transfer());
+            ps.setInt(2, account.getAccount_no());
+            ps.setInt(3, account.getClient_id());
+            ps.executeUpdate();
+
+            String sql1 = "UPDATE accounts SET account_balance = (account_balance + ?) WHERE account_no = ? AND client_id = ?;";
+            PreparedStatement ps1 = conn.prepareStatement(sql1);
+            ps1.setDouble(1, account.getAccount_transfer());
+            ps1.setInt(2, account.getAccount_no());
+            ps1.setInt(3, account.getClient_id());
+            ps1.executeUpdate();
+
+        }catch (SQLException a) {
+            logger.error(a);
         }
 
 

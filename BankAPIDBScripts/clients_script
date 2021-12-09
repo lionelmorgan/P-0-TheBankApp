@@ -1,0 +1,31 @@
+CREATE TABLE clients(
+	client_id serial PRIMARY KEY, 
+	client_username varchar(50) NOT NULL,
+	client_firstname varchar (50) NOT NULL,
+	client_lastname varchar (50) NOT NULL
+);
+
+
+INSERT INTO clients VALUES (DEFAULT, 'alennox@dreamville.com', 'Ari', 'Lennox');
+INSERT INTO clients VALUES (DEFAULT, 'cbailey24@yahoo.com', 'Champ', 'Bailey');
+INSERT INTO clients VALUES (DEFAULT, 'dnowitzki@dallasmavs.net', 'Dirk', 'Nowitzki'); 
+INSERT INTO clients VALUES (DEFAULT, 'emusk@spacex.com', 'Elon', 'Musk');
+INSERT INTO clients VALUES (DEFAULT, 'jbrown@soulmail.com', 'James', 'Brown');
+INSERT INTO clients VALUES (DEFAULT, 'jcole@dreamville.com', 'Jermaine', 'Cole');
+INSERT INTO clients VALUES (DEFAULT, 'ljames@lalakers.com', 'Lebron', 'James');
+INSERT INTO clients VALUES (DEFAULT, 'lrichie@outlook.com', 'Lionel', 'Richie');
+INSERT INTO clients VALUES (DEFAULT, 'mjackson@astromail.com', 'Michael', 'Jackson');
+INSERT INTO clients VALUES (DEFAULT, 'mjordan@spacemail.net', 'Michael', 'Jordan');
+INSERT INTO clients VALUES (DEFAULT, 'nosaka@olympics.com', 'Naomi', 'Osaka');
+INSERT INTO clients VALUES (DEFAULT, 'obrown@thatsoraven.net', 'Orlando', 'Brown');
+INSERT INTO clients VALUES (DEFAULT, 'pgeorge@clippers.com', 'Paul', 'George');
+INSERT INTO clients VALUES (DEFAULT, 'qelizabeth@england.eng', 'Queen', 'Elizabeth');
+INSERT INTO clients VALUES (DEFAULT, 'rmoss@patriots.com', 'Randy', 'Moss');
+INSERT INTO clients VALUES (DEFAULT, 'khart@hartbeat.com', 'Kevin', 'Hart');
+
+
+SELECT * FROM clients;
+
+DROP TABLE clients;
+
+UPDATE clients SET client_username = 'obrown@cartoonnetwork.com' WHERE client_id = 12;

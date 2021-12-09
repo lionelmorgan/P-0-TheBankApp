@@ -1,0 +1,58 @@
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:13 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:133 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+INSERT INTO accounts VALUES (DEFAULT, ?, ?, ?, ?, ?); [42102-200]
+2021-12-06 10:58:14 ERROR AccountsDaoImpl:46 - org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNTS" not found; SQL statement:
+SELECT * FROM accounts; [42102-200]
+2021-12-06 13:04:58 ERROR AccountsDaoImpl:227 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-12-06 13:05:25 ERROR AccountsDaoImpl:46 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-12-06 13:05:47 ERROR AccountsDaoImpl:46 - org.postgresql.util.PSQLException: The connection attempt failed.
+2021-12-06 13:05:57 ERROR ClientsDaoImpl:46 - org.postgresql.util.PSQLException: The connection attempt failed.
